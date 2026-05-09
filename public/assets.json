@@ -1,31 +1,31 @@
 {
   "hero": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/smoketest-1778300852/cleo/1778301520265-hero.png",
+    "alt": "Hero image showing an urban dog owner walking a dog near a neighborhood cafe with quiet negative space for the landing-page headline. It fits the warm, confident PawWalk direction through daylight, hu",
     "width": 1920,
     "height": 1080
   },
   "feature_1": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/smoketest-1778300852/cleo/1778301517620-feature_1.png",
+    "alt": "Feature image showing a schedule-focused entryway still life with a leash, phone, keys, and a dog waiting near the door. It supports flexible scheduling with PawWalk’s teal and amber palette, warm gra",
     "width": 800,
     "height": 600
   },
   "feature_2": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/smoketest-1778300852/cleo/1778301532358-feature_2.png",
+    "alt": "Feature image showing a vetted local walker kneeling calmly beside a dog outside a residential building. It reinforces trust through candid portraiture, natural skin tone, visible catchlights, control",
     "width": 800,
     "height": 600
   },
   "feature_3": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/smoketest-1778300852/cleo/1778301526333-feature_3.png",
+    "alt": "Feature image showing a post-walk kitchen counter scene with a phone update, leash, water bowl, owner, and dog. It supports real-time updates with abstract UI shapes, no readable text, warm daylight, ",
     "width": 800,
     "height": 600
   },
   "social_proof": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/smoketest-1778300852/cleo/1778301524855-social_proof.png",
+    "alt": "Social proof image showing dog owners and a walker in a relaxed neighborhood conversation with dogs nearby. It gives the testimonial area a warm local trust signal while staying grounded in the approv",
     "width": 1200,
     "height": 800
   }
