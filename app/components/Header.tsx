@@ -1,50 +1,46 @@
-"use client";
-
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Header() {
   return (
     <motion.header
-      className="site-header sticky top-0 z-50 w-full bg-[color-mix(in_srgb,var(--color-bg)_88%,transparent)] shadow-[0_1px_24px_color-mix(in_srgb,var(--color-text)_8%,transparent)] backdrop-blur-md"
+      className="sticky top-0 z-50 w-full border-b border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-bg)_92%,transparent)] backdrop-blur-md"
       initial={{ opacity: 0, y: -16 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.6 }}
     >
-      <nav className="site-nav mx-auto grid max-w-7xl grid-cols-12 items-center gap-4 px-5 py-4 sm:px-8 lg:px-10" aria-label="Primary navigation">
-        <div className="col-span-5 sm:col-span-4">
-          <Link
-            href="/"
-            className="site-logo inline-flex items-center rounded-full font-[family-name:var(--font-body)] text-lg font-semibold tracking-[-0.02em] text-[var(--color-text)] outline-none transition-[color,transform] duration-200 ease-out focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)] sm:text-xl"
-            aria-label="PawWalk home"
-          >
-            PawWalk
-          </Link>
-        </div>
+      <nav
+        className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-10"
+        aria-label="Primary navigation"
+      >
+        <Link
+          href="/"
+          className="inline-flex items-center rounded-[var(--radius-md)] font-[family-name:var(--font-body)] text-lg font-semibold tracking-[-0.02em] text-[var(--color-text)] outline-none transition-colors duration-200 ease-out hover:text-[var(--color-primary)] focus-visible:ring-4 focus-visible:ring-[var(--color-focus-ring)]"
+          aria-label="PawWalk home"
+        >
+          PawWalk
+        </Link>
 
-        <div className="site-links col-span-7 flex items-center justify-end gap-3 sm:col-span-8 sm:gap-7">
+        <div className="flex items-center gap-6">
           <Link
             href="#how-it-works"
-            className="hidden rounded-full font-[family-name:var(--font-body)] text-base font-medium text-[var(--color-text)] underline decoration-transparent decoration-2 underline-offset-8 outline-none transition-[color,text-decoration-color] duration-200 ease-out hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)] focus-visible:text-[var(--color-accent)] focus-visible:decoration-[var(--color-accent)] focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)] sm:inline-flex"
+            className="hidden rounded-[var(--radius-md)] font-[family-name:var(--font-body)] text-sm font-medium text-[var(--color-muted)] outline-none transition-colors duration-200 ease-out hover:text-[var(--color-text)] focus-visible:ring-4 focus-visible:ring-[var(--color-focus-ring)] sm:inline-flex"
           >
             How it works
           </Link>
           <Link
             href="#faq"
-            className="hidden rounded-full font-[family-name:var(--font-body)] text-base font-medium text-[var(--color-text)] underline decoration-transparent decoration-2 underline-offset-8 outline-none transition-[color,text-decoration-color] duration-200 ease-out hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)] focus-visible:text-[var(--color-accent)] focus-visible:decoration-[var(--color-accent)] focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)] sm:inline-flex"
+            className="hidden rounded-[var(--radius-md)] font-[family-name:var(--font-body)] text-sm font-medium text-[var(--color-muted)] outline-none transition-colors duration-200 ease-out hover:text-[var(--color-text)] focus-visible:ring-4 focus-visible:ring-[var(--color-focus-ring)] sm:inline-flex"
           >
             FAQ
           </Link>
-          <motion.a
+          <Link
             href="#waitlist"
-            className="site-cta inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--color-primary)] px-5 font-[family-name:var(--font-body)] text-base font-semibold tracking-[-0.01em] text-[var(--color-bg)] shadow-[0_10px_30px_color-mix(in_srgb,var(--color-primary)_18%,transparent)] outline-none transition-[box-shadow] duration-200 ease-out focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)] sm:px-6"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
+            className="inline-flex min-h-11 items-center justify-center rounded-[var(--radius-md)] bg-[var(--color-primary)] px-6 py-3 font-[family-name:var(--font-body)] text-base font-semibold text-[var(--color-primary-foreground)] outline-none transition-colors duration-200 ease-out hover:bg-[color-mix(in_srgb,var(--color-primary)_92%,black)] focus-visible:ring-4 focus-visible:ring-[var(--color-focus-ring)]"
           >
             Join the waitlist
-          </motion.a>
+          </Link>
         </div>
       </nav>
     </motion.header>
